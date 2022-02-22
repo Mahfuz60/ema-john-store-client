@@ -8,7 +8,7 @@ const useCart = () => {
     const savedCart = getStoredCart();
 
     const keys = Object.keys(savedCart);
-    fetch(`http://localhost:5000/products/byKeys`, {
+    fetch(`https://floating-forest-22216.herokuapp.com/products/byKeys`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(keys),

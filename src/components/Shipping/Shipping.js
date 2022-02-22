@@ -16,7 +16,7 @@ const Shipping = () => {
     const saveCart = getStoredCart();
     data.order = saveCart;
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://floating-forest-22216.herokuapp.com/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
